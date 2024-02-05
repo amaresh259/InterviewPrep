@@ -1,0 +1,58 @@
+OOPS Concept Discussion:
+------------------------
+What is the use of setter/getter method?
+- We can write the logic to set/get the variable.
+
+What is co-variant return type?
+----------------------------
+Encapsulation:
+Related questions: https://www.scientecheasy.com/2018/06/real-encapsulation-interview-questions-answers.html/
+
+---
+-> Setter/Mutator and Getter/Accessor
+-> Tightly Encapsulated -> It should have all private variable.
+-> Encapsulation used in many design pattern, one of them is Factory design pattern.
+-> Abstraction solves the problem at the design level whereas encapsulation solves the problem at the implementation level.
+--------------------------
+
+
+UI -> PROCESS -> Service -> Database Layer ---> POJO
+@Component
+@Controller
+@Service
+@Repository
+
+
+@Entity
+@Configuration
+@SpringBootApplication
+
+
+@Bean -- Method level annotation, it is only used to create a configuration bean for predefined method in configuration class.
+@Bean always work only when the class is declared with @Configuration
+public class AppConfig {
+    @Bean
+    public TransferService transferService() {
+        return new TransferServiceImpl();
+    }
+}
+XML based : <beans>
+                <bean name="transferService" class="com.acme.TransferServiceImpl"/>
+            </beans>
+
+
+----------
+@Autowired
+-----------
+
+Employee
+{
+Address
+}
+
+@Bean
+Address{
+
+}
+
+
