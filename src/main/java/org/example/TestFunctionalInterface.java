@@ -7,6 +7,6 @@ public interface TestFunctionalInterface {
 
     }
     static void m3(){
-
+        System.out.println("Functional Interface");
     }
 }
