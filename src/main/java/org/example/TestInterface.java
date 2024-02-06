@@ -6,6 +6,8 @@ import org.jetbrains.annotations.NotNull;
 public interface TestInterface {
     int x = 4;
 
+    //void abstractm1();
+
     static void m1(){
         int x = 0;
         x++;

@@ -15,5 +15,15 @@ public class Main {
             // for you, but you can always add more by pressing Cmd+F8.
             System.out.println("i = " + i);
         }
+        // Using lambda expression for addition
+        CalculatorFunctionalInterface addition = (a, b) -> a + b;
+        System.out.println("Addition: " + addition.operate(5, 3));
+
+        // Using lambda expression for multiplication
+        CalculatorFunctionalInterface multiplication = (a, b) -> a * b;
+        System.out.println("Multiplication: " + multiplication.operate(5, 3));
+
+        // Using default method for square root
+        System.out.println("Square root: " + addition.squareRoot(25));
     }
 }

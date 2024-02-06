@@ -1,0 +1,55 @@
+Functional Interface:
+--------------------
+1. @FunctionalInterface should be used to create custom functional interface.
+2. @FunctionalInterface will validate the interface should have only one abstract method.
+3. Functional interface implementation can be provided by using lambda expression.
+4. Functional Programming provides the concept of what to do not how to do.
+
+Functional Interface vs
+
+
+What is marker interface?
+The interface does not have any method.
+ex. Serializable, Cloneable, RandomAccess -> implementation provided by ArrayList in collection
+
+-------------------
+Q & A:
+1.What is a functional interface in Java 8?
+A functional interface is an interface that has exactly one abstract method. It can have multiple default or static methods but only one abstract method.
+It can also be annotated with @FunctionalInterface annotation for ensuring only one abstract method is present.
+
+2.Can you give an example of a functional interface in the Java standard library?
+The java.util.function package contains several functional interfaces. One example is Predicate<T>, which has a single abstract method test that returns a boolean value.
+Other examples include Function<T, R>, Consumer<T>, and Supplier<T>.
+
+3.Why were functional interfaces introduced in Java 8?
+Functional interfaces were introduced to provide target types for lambda expressions and method references. They enable functional programming concepts,
+such as higher-order functions, to be used in Java.
+
+4.What is the @FunctionalInterface annotation? Is it mandatory to use it?
+The @FunctionalInterface annotation is used to indicate that an interface is intended to be a functional interface. It is not mandatory to use it;however, it helps
+in maintaining the contract of the functional interface in that it will cause a compile-time error if the interface does not meet the criteria (exactly one abstract method).
+
+5.How do lambda expressions relate to functional interfaces?
+Lambda expressions are essentially instances of functional interfaces. A lambda expression provides the implementation for the abstract method within a functional interface,
+thereby enabling concise and functional-style code.
+
+6.Can a functional interface extend another interface?
+Yes, a functional interface can extend another interface, but it must still have only one abstract method. It can inherit an abstract method from the extended interface
+or declare a new one, but in total, there must be only one abstract method.
+
+7.What is the difference between a functional interface and an ordinary interface?
+The main difference is that a functional interface has exactly one abstract method, while an ordinary interface can have multiple abstract methods.
+This single abstract method makes a functional interface a candidate for lambda expressions and method references.
+
+8.How can default methods in a functional interface affect its definition?
+Default methods do not affect the definition of a functional interface. A functional interface can have any number of default methods.
+Default methods provide default implementations for methods without breaking the implementation classes.
+
+9.Provide an example where you have used a functional interface in your code.
+This would be a subjective answer where the candidate would explain a scenario from their work where they used a functional interface,
+like handling user actions with a Consumer<T>, transforming objects with Function<T, R>, or chaining operations using Predicate<T>.
+
+10.Explain the difference between Function<T, R> and Consumer<T> functional interfaces.
+Function<T, R> is a functional interface that accepts one argument of type T and returns a result of type R. On the other hand,
+Consumer<T> is a functional interface that accepts one argument of type T and returns no result (void).

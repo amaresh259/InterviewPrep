@@ -3,6 +3,8 @@ OOPS Concept Discussion:
 What is the use of setter/getter method?
 - We can write the logic to set/get the variable.
 
+Abstraction :
+Object/bean creation in Spring Container/ Spring boot. We do not create object, it has been provided by the spring container.
 What is co-variant return type?
 ----------------------------
 Encapsulation:
@@ -12,9 +14,15 @@ Related questions: https://www.scientecheasy.com/2018/06/real-encapsulation-inte
 -> Setter/Mutator and Getter/Accessor
 -> Tightly Encapsulated -> It should have all private variable.
 -> Encapsulation used in many design pattern, one of them is Factory design pattern.
--> Abstraction solves the problem at the design level whereas encapsulation solves the problem at the implementation level.
+-> Abstraction solves the problem at the design level whereas encapsulation solves the problem at the implementation level
+(Mostly Abstraction uses in design level whereas encapsulation uses in implementation level.)
 --------------------------
-
+Different Types of POJO classes in java Application ?
+1.Entity classes
+2.DTO classes
+3.Request and Response Classes
+4.Configuration classes
+5.Utility Classes
 
 UI -> PROCESS -> Service -> Database Layer ---> POJO
 @Component

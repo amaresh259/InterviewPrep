@@ -1,0 +1,20 @@
+Interface vs Abstract Class after Java 8?
+Interface:
+1. By default, the member variable is public, static and final.
+2. Override the specific default method implementation from required Interface
+@override
+public void method(){
+<Required interface name>.super.<method name>();
+}
+It will always take precedence while calling method from Required interface which we mentioned in Override method
+ in a diamond situation scenario.
+
+Abstract:
+1. Variable has no restriction.
+
+
+
+---------------
+
+
+

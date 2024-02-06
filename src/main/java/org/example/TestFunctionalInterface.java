@@ -1,12 +1,12 @@
 package org.example;
 
 @FunctionalInterface
-public interface TestFunctionalInterface {
+public interface TestFunctionalInterface extends TestInterface{
     void m1();
     static void m2(){
 
     }
-    static void m3(){
+    default void m3(){
         System.out.println("Functional Interface");
     }
 }
