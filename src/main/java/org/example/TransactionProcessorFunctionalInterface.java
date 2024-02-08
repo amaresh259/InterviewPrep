@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.function.Function;
 import java.util.function.Consumer;
+import java.util.stream.IntStream;
 
 /*Imagine we have a Transaction class and a list of Transaction objects. We want to:
 
@@ -69,4 +70,5 @@ public class TransactionProcessorFunctionalInterface {
 
             System.out.println("Total of processed transactions: " + total);
         }
+
 }

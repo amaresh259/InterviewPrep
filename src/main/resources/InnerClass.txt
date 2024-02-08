@@ -1,0 +1,92 @@
+Inner Class:
+A class declared inside another class.
+4 types inner class are there in Java.
+----------
+1. Member Inner Class
+
+- A member inner class is defined at the member level of a class (not inside a method or a block).
+- It has access to the members (fields and methods) of the outer class, including private members.
+- It can be instantiated only with an instance of the outer class.
+Ex. public class Outer {
+        private int outerField;
+
+        public class Inner {
+            private int innerField;
+
+            public Inner(int innerField) {
+                this.innerField = innerField;
+                outerField = 10; // Accessing outer class member
+            }
+
+            public void display() {
+                System.out.println("Outer Field: " + outerField + ", Inner Field: " + innerField);
+            }
+        }
+    }
+----------------
+2. Static Nested Class
+
+-A static nested class is a static member of the outer class and doesn't have access to the instance members of the outer class.
+-It is instantiated without an instance of the outer class.
+-It can access static members (fields and methods) of the outer class.
+Ex.
+public class Outer {
+    private static int outerStaticField;
+
+    public static class Nested {
+        private int nestedField;
+
+        public Nested(int nestedField) {
+            this.nestedField = nestedField;
+            outerStaticField = 20; // Accessing outer class static member
+        }
+
+        public void display() {
+            System.out.println("Outer Static Field: " + outerStaticField + ", Nested Field: " + nestedField);
+        }
+    }
+}
+----------------------
+3. Local Inner Class
+
+-A local inner class is defined within a block of code, typically within a method.
+-It has access to the final or effectively final local variables of the enclosing scope.
+-It is not accessible outside the block where it is defined.
+
+Ex. public class Outer {
+        public void outerMethod() {
+            final int localVar = 30; // Local variable
+
+            class LocalInner {
+                public void display() {
+                    System.out.println("Local Variable: " + localVar);
+                }
+            }
+
+            LocalInner inner = new LocalInner();
+            inner.display();
+        }
+    }
+--------------------
+4. Anonymous Inner Class
+
+-An anonymous inner class is an unnamed class defined and instantiated in a single statement.
+-It is often used for implementing interfaces or extending classes on-the-fly.
+
+Ex.
+interface MyInterface {
+    void myMethod();
+}
+
+public class Outer {
+    public void anonymousInner() {
+        MyInterface anonymousImpl = new MyInterface() {
+            public void myMethod() {
+                System.out.println("Implementation of myMethod");
+            }
+        };
+
+        anonymousImpl.myMethod();
+    }
+}
+--------------------

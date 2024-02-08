@@ -1,0 +1,31 @@
+1.Difference between Interface vs Abstract class after java 8 ?
+I.Constructors:
+interfaces can't have constructor
+while Abstract classes can contain constructors.
+
+II.Inheritance:
+A class can implement multiple interfaces
+while it can extend only one abstract class.
+
+III.Access Modifiers:
+All methods in an interface are implicitly public
+but an abstract class can have methods with any access modifier.
+
+IV.Fields:
+Interfaces can only have constant fields (public static final),
+whereas an abstract class can have non-final fields.
+
+V.Multiple inheritance:
+Interface supports multiple inheritance.
+Abstract classes do not support multiple inheritance.
+
+VI.Abstract methods:
+In an interface, methods are abstract by default. In an abstract class, you need to use the abstract keyword.
+
+VII.Static and Instance block :
+Interface can't contain static and instance block.
+but Abstract class can contain.
+
+2.When to go for interface and when to go for abstract class ?
+If for most of the implemented class, the implementation is different, then we should go for interface.
+If for most of the implemented class, the implementation is the same, then go for Abstract class.

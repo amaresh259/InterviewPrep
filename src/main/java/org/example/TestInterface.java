@@ -20,12 +20,18 @@ public interface TestInterface {
         return "x";
     }
 
+    default double squareRoot(int a) {
+        return a*a*a;
+    }
+
     default void m3(){
         int y=0;
         y++;
         System.out.println("Inside TestInterface");
         System.out.println("m3 y value = "+y);
     }
+
+    //int operate(int a, int b);
 
 
     

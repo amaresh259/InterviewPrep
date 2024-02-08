@@ -5,7 +5,17 @@ Functional Interface:
 3. Functional interface implementation can be provided by using lambda expression.
 4. Functional Programming provides the concept of what to do not how to do.
 
-Functional Interface vs
+-----------
+1. If there is any conflict over default method then we have to implement/override the conflicted default method inside implemented class.
+e.g. if class A implements InterfaceB , InterfaceC... and both the interface has common default method, then we will override the common default method inside Class A.
+2. If a class overrides the default method from functional interface, then to call default method of functional interface, we need to declare a separate method and write
+the below logic to call the default method
+<FunctionalInterfaceName>.super.<defaultmethodname>();
+-------------
+Functional Interface vs Interface
+Interface vs Abstract
+--------------
+
 
 
 What is marker interface?

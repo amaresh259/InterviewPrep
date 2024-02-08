@@ -12,9 +12,10 @@ public class TestInterfaceImpl implements TestInterface, TestInterfaceDiamond{
         testInterfaceDiamond.m3();
     }
 
+
     @Override
     public void m3() {
-        //System.out.println("Inside TestInterfaceImpl");
+        System.out.println("Inside TestInterfaceImpl");
         TestInterface.super.m3();
     }
 }

@@ -1,0 +1,23 @@
+this Keyword:
+-------------
+1. "this" keyword always takes the current object of the class.
+2. "this" is mainly use for two purpose
+    i.  By using this keyword we can call a constructor within another constructor.
+    ii. It is used to differentiate a instance variable from a method parameter name, when the method parameter name is
+        same as the instance variable name.
+3. this keyword always be the 1st statement in a constructor.
+
+-----------
+super keyword:
+-------------
+1. By using super keyword we can call a super class constructor from a child class constructor.
+2. super keyword always refers to super class object.
+3. super keyword must be the 1st statement in the constructor.
+4. super keyword only be used in case of inheritance.
+
+--------------
+Inheritance:
+- In java Single Inheritance is possible. (Multi level and Hierarchy too)
+- Multiple inheritance can be possible through interface.
+- Whenever we are calling a child class constructor, then it implicitly calls the default constructor of the super class.
+- By using inheritance the child class can access all the data members from the parent except private data members.

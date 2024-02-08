@@ -1,0 +1,31 @@
+1. Local Variable
+i.  If a variable is declared within a block or method or Constructor.
+ii. The scope of local variable is within that block only.
+iii.Local variable must be initialized before use otherwise it will give compilation error.
+iv. In local variable we can not use any access specifier.
+
+
+----------------
+2. Global / Instance Variable
+i.  If a variable is declared outside the method or block or constructor.
+ii. By default, it will have default value of the datatype if it is not initialized explicitly.
+iii.We can have any type of access specifier.
+iv. It can be directly accessed by non-static method or non-static block.
+v.  It can't be accessed directly inside static method/context, but by using an object we can call the instance variable.
+
+-------------------
+3. Static / Class Variable
+i.  If a variable is declared outside the method or block or constructor but use a static modifier.
+ii. Static variable are called class level variable because it is initialized when java class loaded by JVM.
+iii.By default, it will have default value of the datatype if it is not initialized explicitly.
+iv. Static variable can be accessed directly inside static method or static context, non-static method, and also it can be accessed by using class name.
+v.  We can have any type of access specifier.
+vi. Static variable always keeps the last copy or value of the variable.
+vii.Static variable can be accessed by object reference, but gives warning.
+
+
+Note :
+Why we can't define a outer class as static?
+The static keyword is associated with the class rather than with instances of the class. It implies that the member
+belongs to the class and not to any specific instance of the class. An outer class, by its nature, is associated with instances,
+so applying static to an outer class doesn't make sense.

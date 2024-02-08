@@ -62,5 +62,15 @@ Address
 Address{
 
 }
+------------------------------------------------------------------------------------
+Private  -> With in the Class
+
+NoAccessSpecifier -> With in the class | With in a package, the class is subclass | With in the Package, the class is not subclass
+
+Protected ->   With in the class | With in a package, the class is subclass | With in the Package, the class is not subclass |
+               Outside the package, the class is subclass
+
+Public    ->   With in the class | With in a package, the class is subclass | With in the Package, the class is not subclass |
+               Outside the package, the class is subclass | Outside the package, the class is not subclass
 
 
