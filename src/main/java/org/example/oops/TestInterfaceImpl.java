@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oops;
 
 public class TestInterfaceImpl implements TestInterface, TestInterfaceDiamond{
     public static void main(String[] args) {

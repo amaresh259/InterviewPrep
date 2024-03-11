@@ -29,3 +29,10 @@ but Abstract class can contain.
 2.When to go for interface and when to go for abstract class ?
 If for most of the implemented class, the implementation is different, then we should go for interface.
 If for most of the implemented class, the implementation is the same, then go for Abstract class.
+
+-----------------------
+Note
+-----------
+- We can not achieve multiple inheritance by using interface, if the common method of interfaces has different return type except
+covariant type.
+-----------------------

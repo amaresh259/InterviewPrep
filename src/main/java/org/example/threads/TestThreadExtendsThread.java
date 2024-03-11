@@ -1,4 +1,4 @@
-package org.example;
+package org.example.threads;
 
 public class TestThreadExtendsThread extends Thread{
     public void run(){

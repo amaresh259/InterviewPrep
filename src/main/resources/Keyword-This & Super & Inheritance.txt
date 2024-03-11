@@ -15,9 +15,54 @@ super keyword:
 3. super keyword must be the 1st statement in the constructor.
 4. super keyword only be used in case of inheritance.
 
+----------------
+Note :
+-----------
+- this() and super() method should not be used in any normal method(Only used in Constructor)
+- We can use anyone (this() or super()) at a time inside constructor.
+--------------
+
+Final Keyword :
+--------------
+- Final Keyword can be applied to variable, class and method
+- If a class is final then we can not extend it in subclass.
+- If a variable is final, once initialized we can not reassign.
+- If a method is final, we can not override in subclass.
+- Final method is inherited, but you cannot override it
+- Enums in Java are implicitly final and cannot be extended. They are often used to represent a fixed set of constants.
+
+
+Real time use case of Final Class:
+- For Security Consideration
+- For API design - If you are designing an API and want to ensure that certain classes or methods remain as-is in future versions to maintain backward compatibility,
+  marking them as final can be a good practice.
+- Thread Safety and Immutability
+- Enums in Java
+
 --------------
 Inheritance:
 - In java Single Inheritance is possible. (Multi level and Hierarchy too)
 - Multiple inheritance can be possible through interface.
 - Whenever we are calling a child class constructor, then it implicitly calls the default constructor of the super class.
 - By using inheritance the child class can access all the data members from the parent except private data members.
+
+---------------
+Association in java:
+There are two type
+i.  Composition - Tight Association
+Class A{
+B b = new B();
+b.m2()
+}
+Class B{
+m2(){
+
+}
+}
+ii. Aggregation - Week Association
+Class A{
+B b;
+}
+Class B{
+
+}

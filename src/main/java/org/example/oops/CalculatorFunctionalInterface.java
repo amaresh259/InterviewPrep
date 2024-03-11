@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oops;
 
 /*Here, Calculator is a functional interface with the abstract method operate.
 The @FunctionalInterface annotation is optional but serves as a documentation aid and ensures that

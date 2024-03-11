@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oops;
 
 @FunctionalInterface
 public interface TestFunctionalInterface extends TestInterface{

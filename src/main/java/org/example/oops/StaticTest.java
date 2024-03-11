@@ -1,7 +1,9 @@
-package org.example;
+package org.example.oops;
 
 public class StaticTest {
     static int i = 5; // 6
+    StringBuffer sb;
+    StringBuilder sb1;
     int j = 5;
     static void go(){
         i--;

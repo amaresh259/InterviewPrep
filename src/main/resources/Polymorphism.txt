@@ -1,0 +1,58 @@
+Polymorphism:
+If one task is performed in different ways, it is known as polymorphism.
+Polymorphism can achieve in java by method overloading and method overriding.
+
+Method Overloading / Compile time polymorphism:
+- If a class has multiple methods having same name, but different in parameters.
+- It increases readability of program.
+- It can be achieved by changing number of the parameter or by changing the datatype of the parameter.
+- It can not achieve by changing the return type of method only.
+
+Type Promotion:
+byte -> short -> int -> long  -> double
+                     -> float -> double
+                     -> double
+
+        char -> int -> long  -> double
+                    -> float -> double
+                    -> double
+
+-------------------------
+Method Overriding / Runtime polymorphism:
+- If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as
+  method overriding.
+- The method must have same method signature as its parent class, that means same name and same number of parameter and type.
+- There must be an IS-A relationship(Inheritance).
+- We can not override a static method, because static bounds to the class or class area.(It means we can have same static method in subclass but without @Override annotation)
+- If a method in parent class is static, then same method declared in subclass should be static.
+- If you are overriding any method, overridden method (i.e. declared in subclass) must not be more restrictive.
+    - Restriction more to less : private > default > protected > public
+- Overriding with respect to Exception:
+  1. If the superclass method does not declare an exception:
+     If the superclass method does not declare an exception , subclass overridden method cannot declare the checked exception,
+     but it can declare unchecked exception.
+  2. If the superclass method declares an unchecked exception, subclass overridden method can declare any unchecked exception.
+
+  3. If the superclass method declares an exception:
+     If the superclass method declares an exception, subclass overridden method can declare same, subclass exception or
+     no exception but cannot declare parent exception.
+
+- Covariant Return Type: If the non-primitive return type of subclass method is subtype(subclass type) of the parent class method return type(non-primitive),
+                         then it is called Covariant return type.
+- Overriding concept is not applicable for variable.
+  i.e, The variable is called according to the object reference of the class.
+  class A{
+  int x = 5;
+  }
+  class B extends A{
+  int x = 6;
+  psvm(){
+  A a = new B();
+  sysout(a.x); // It will print 5
+  }
+  }
+
+
+
+
+

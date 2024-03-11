@@ -1,4 +1,4 @@
-package org.example;
+package org.example.oops;
 
 public class Test2 extends Test{
     @Override

@@ -1,8 +1,8 @@
-package org.example;
+package org.example.oops;
 
 public class VariablesInJava {
     public String s1; // instance Variable, implicitly assigned with default value of datatype
-    public static String s3; // Static variable, implicitly assigned with default value of datatype at the time of class load
+    public static String s3 = "Shyam"; // Static variable, implicitly assigned with default value of datatype at the time of class load
     static int a=0;
     VariablesInJava(){
     String s2 = "Ram"; // local variable, should be initialized before use
@@ -21,7 +21,8 @@ public class VariablesInJava {
     //Instance Block
     {
         System.out.println("S1 Value "+s1);
-        System.out.println("S3 static variable value in m2 static "+VariablesInJava.s3);
+        System.out.println("S3 static variable value in m2 static "+s3);
+        //m2();
     }
     //Static Block
     static{
@@ -36,12 +37,13 @@ public class VariablesInJava {
     static void m2(){
         VariablesInJava variablesInJava = new VariablesInJava();
         System.out.println("S1 Value "+variablesInJava.s1);
-        System.out.println("S3 static variable value in m2 static "+ s3);
+        System.out.println("S3 static variable value in m2 static "+s3);
     }
 
     public static void main(String[] args) {
         VariablesInJava variablesInJava = new VariablesInJava();
         System.out.println("S1 Value "+variablesInJava.s1);
         //System.out.println("S2 Value "+variablesInJava.s2);
+        //VariablesInJava.m2();
     }
 }
